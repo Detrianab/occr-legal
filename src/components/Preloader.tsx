@@ -24,7 +24,7 @@ export function Preloader() {
             transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
             className="relative h-32 w-32 md:h-40 md:w-40"
           >
-            <img src={emblem.url} alt="" className="h-full w-full object-contain" />
+            <img src={emblem} alt="" className="h-full w-full object-contain" />
             <motion.div
               className="absolute inset-0 bg-navy-deep"
               initial={{ clipPath: "inset(0 0 0% 0)" }}

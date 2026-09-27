@@ -20,7 +20,7 @@ export function Hero() {
       />
       {/* Capa 2 — rosa de los vientos */}
       <motion.img
-        src={emblem.url}
+        src={emblem}
         alt=""
         aria-hidden
         initial={{ opacity: 0, scale: 1.1, rotate: -8 }}

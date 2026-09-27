@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <div className="flex flex-col gap-10 border-b border-silver/15 pb-10 md:flex-row md:items-start md:justify-between">
           <div className="flex items-center gap-4">
-            <img src={emblem.url} alt="" className="h-14 w-14 object-contain" />
+            <img src={emblem} alt="" className="h-14 w-14 object-contain" />
             <div>
               <p className="font-display text-xl tracking-[0.2em] text-silver">OCCR &amp;</p>
               <p className="text-[0.62rem] tracking-[0.38em] text-silver-dark">ASOCIADOS · LEGAL</p>

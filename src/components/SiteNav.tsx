@@ -35,7 +35,7 @@ export function SiteNav() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
         <button onClick={() => go("inicio")} className="flex items-center gap-3 text-left">
-          <img src={emblem.url} alt="OCCR & Asociados" className="h-10 w-10 object-contain" />
+          <img src={emblem} alt="OCCR & Asociados" className="h-10 w-10 object-contain" />
           <span className="leading-none">
             <span className={`block font-display text-lg tracking-[0.18em] ${scrolled ? "text-silver" : "text-navy-deep"}`}>OCCR &amp;</span>
             <span className={`block text-[0.6rem] tracking-[0.35em] ${scrolled ? "text-silver-dark" : "text-navy/60"}`}>ASOCIADOS · LEGAL</span>
