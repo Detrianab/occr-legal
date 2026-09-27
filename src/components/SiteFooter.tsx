@@ -1,5 +1,5 @@
 import { Linkedin, Instagram, MessageCircle, Mail } from "lucide-react";
-import emblem from "@/assets/occr-emblem.png.asset.json";
+import emblem from "@/assets/occr-emblem.png";
 import { CONTACT, useI18n } from "@/lib/i18n";
 
 export function SiteFooter() {

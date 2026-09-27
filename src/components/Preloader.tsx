@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import emblem from "@/assets/occr-emblem.png.asset.json";
+import emblem from "@/assets/occr-emblem.png";
 
 export function Preloader() {
   const [done, setDone] = useState(false);

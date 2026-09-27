@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
-import emblem from "@/assets/occr-emblem.png.asset.json";
+import emblem from "@/assets/occr-emblem.png";
 import { CONTACT, useI18n } from "@/lib/i18n";
 
 const ease = [0.16, 1, 0.3, 1] as const;

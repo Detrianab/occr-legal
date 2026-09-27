@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import emblem from "@/assets/occr-emblem.png.asset.json";
+import emblem from "@/assets/occr-emblem.png";
 import { useI18n } from "@/lib/i18n";
 
 const links = [
