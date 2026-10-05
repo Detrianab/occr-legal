@@ -77,15 +77,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "OCCR & Asociados | Legal" },
+      { title: "OCCR Legal" },
       {
         name: "description",
         content:
-          "OCCR & Asociados: asesoría jurídica corporativa, marítima, de comercio exterior y arbitraje en Caracas, Venezuela.",
+          "OCCR Legal: asesoría jurídica corporativa, marítima, de comercio exterior y arbitraje en Caracas, Venezuela.",
       },
-      { name: "author", content: "OCCR & Asociados" },
+      { name: "author", content: "OCCR Legal" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "google-site-verification",
+        content: "1W2XnWYrBdi1Yr6lcorpzpDgfQa1gbNlPSP6qw93jY4",
+      },
     ],
     links: [
       {
@@ -113,6 +117,10 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <meta
+          name="google-site-verification"
+          content="ErHQXIIwEu01I3ed5rBZu0oPeOM7BXPKA7E5Au8rxVM"
+        />
       </head>
       <body>
         {children}
