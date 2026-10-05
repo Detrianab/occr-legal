@@ -23,7 +23,7 @@ export function About() {
         >
           <p className="eyebrow text-gold">{t("about.eyebrow")}</p>
           <h2 className="mt-5 font-display text-3xl text-silver md:text-5xl">{t("about.name")}</h2>
-          <p className="mt-3 text-sm tracking-[0.12em] text-silver-dark">{t("about.role")}</p>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-silver-dark">{t("about.role")}</p>
           <div className="mt-8 h-px w-40 rule-gold" />
 
           <div className="mt-8 space-y-5 text-[0.95rem] leading-relaxed text-silver/75">

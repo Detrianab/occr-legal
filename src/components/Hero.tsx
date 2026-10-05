@@ -48,7 +48,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25, duration: 1, ease }}
-          className="mt-6 max-w-4xl font-display text-4xl leading-[1.08] text-navy-deep sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mt-6 max-w-5xl font-display text-4xl italic leading-[1.08] text-navy-deep sm:text-5xl md:text-6xl lg:text-7xl"
         >
           {t("hero.title1")}
           <span className="block text-navy">{t("hero.title2")}</span>
