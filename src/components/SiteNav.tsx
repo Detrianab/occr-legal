@@ -70,7 +70,7 @@ export function SiteNav() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-3 md:px-10">
         <button onClick={() => go("inicio")} className="flex min-w-0 items-center gap-4 text-left">
-          <img src={emblem.url} alt="OCCR Legal" className="h-14 w-14 shrink-0 object-contain md:h-16 md:w-16" />
+          <img src={emblem} alt="OCCR Legal" className="h-14 w-14 shrink-0 object-contain md:h-16 md:w-16" />
           <span className="leading-none">
             <span
               className={`block font-display text-xl tracking-[0.18em] transition-colors md:text-2xl ${scrolled ? "text-silver" : "text-navy-deep"}`}
