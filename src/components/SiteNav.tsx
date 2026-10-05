@@ -111,15 +111,15 @@ export function SiteNav() {
             </button>
           ))}
 
-          {/* Selector de idiomas con banderas (Escritorio) */}
+          {/* Selector de idiomas con banderas SVG (Escritorio) */}
           <div
-            className={`flex items-center gap-1 border px-1.5 py-0.5 transition-colors ${scrolled ? "border-silver/25" : "border-navy/20"}`}
+            className={`flex items-center gap-1.5 border px-1.5 py-0.5 transition-colors ${scrolled ? "border-silver/25" : "border-navy/20"}`}
           >
             {(["es", "en"] as const).map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
-                className={`flex items-center gap-1 px-2 py-0.5 text-[0.7rem] uppercase tracking-[0.15em] transition-colors ${
+                className={`flex items-center gap-1.5 px-2 py-0.5 text-[0.7rem] uppercase tracking-[0.15em] transition-colors ${
                   lang === l
                     ? "bg-gold text-navy-deep font-medium"
                     : scrolled
@@ -127,7 +127,18 @@ export function SiteNav() {
                       : "text-navy/60 hover:text-navy"
                 }`}
               >
-                <span>{l === "es" ? "🇪🇸" : "🇺🇸"}</span>
+                {l === "es" ? (
+                  <svg className="h-3 w-4.5 rounded-sm object-cover shadow-sm" viewBox="0 0 750 500" aria-label="Español">
+                    <rect width="750" height="500" fill="#c60b1e"/>
+                    <rect width="750" height="250" y="125" fill="#ffc400"/>
+                  </svg>
+                ) : (
+                  <svg className="h-3 w-4.5 rounded-sm object-cover shadow-sm" viewBox="0 0 740 390" aria-label="English">
+                    <rect width="740" height="390" fill="#b22234"/>
+                    <path d="M0 30h740M0 90h740M0 150h740M0 210h740M0 270h740M0 330h740" stroke="#fff" strokeWidth="30"/>
+                    <rect width="296" height="210" fill="#3c3b6e"/>
+                  </svg>
+                )}
                 <span>{l.toUpperCase()}</span>
               </button>
             ))}
@@ -181,17 +192,28 @@ export function SiteNav() {
               </motion.button>
             ))}
             <div className="mt-5 flex items-center justify-between gap-3">
-              {/* Selector de idiomas con banderas (Móvil) */}
+              {/* Selector de idiomas con banderas SVG (Móvil) */}
               <div className="flex gap-1 border border-silver/25 px-1.5 py-0.5">
                 {(["es", "en"] as const).map((l) => (
                   <button
                     key={l}
                     onClick={() => setLang(l)}
-                    className={`flex items-center gap-1 px-2.5 py-1 text-[0.68rem] uppercase tracking-[0.15em] ${
+                    className={`flex items-center gap-1.5 px-2.5 py-1 text-[0.68rem] uppercase tracking-[0.15em] ${
                       lang === l ? "bg-gold text-navy-deep font-medium" : "text-silver/70"
                     }`}
                   >
-                    <span>{l === "es" ? "🇪🇸" : "🇺🇸"}</span>
+                    {l === "es" ? (
+                      <svg className="h-3 w-4.5 rounded-sm object-cover shadow-sm" viewBox="0 0 750 500" aria-label="Español">
+                        <rect width="750" height="500" fill="#c60b1e"/>
+                        <rect width="750" height="250" y="125" fill="#ffc400"/>
+                      </svg>
+                    ) : (
+                      <svg className="h-3 w-4.5 rounded-sm object-cover shadow-sm" viewBox="0 0 740 390" aria-label="English">
+                        <rect width="740" height="390" fill="#b22234"/>
+                        <path d="M0 30h740M0 90h740M0 150h740M0 210h740M0 270h740M0 330h740" stroke="#fff" strokeWidth="30"/>
+                        <rect width="296" height="210" fill="#3c3b6e"/>
+                      </svg>
+                    )}
                     <span>{l.toUpperCase()}</span>
                   </button>
                 ))}
