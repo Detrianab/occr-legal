@@ -111,22 +111,24 @@ export function SiteNav() {
             </button>
           ))}
 
+          {/* Selector de idiomas con banderas (Escritorio) */}
           <div
-            className={`flex items-center gap-1 border px-1 py-0.5 transition-colors ${scrolled ? "border-silver/25" : "border-navy/20"}`}
+            className={`flex items-center gap-1 border px-1.5 py-0.5 transition-colors ${scrolled ? "border-silver/25" : "border-navy/20"}`}
           >
             {(["es", "en"] as const).map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
-                className={`px-2 py-0.5 text-[0.65rem] uppercase tracking-[0.15em] transition-colors ${
+                className={`flex items-center gap-1 px-2 py-0.5 text-[0.7rem] uppercase tracking-[0.15em] transition-colors ${
                   lang === l
-                    ? "bg-gold text-navy-deep"
+                    ? "bg-gold text-navy-deep font-medium"
                     : scrolled
                       ? "text-silver/70 hover:text-gold"
                       : "text-navy/60 hover:text-navy"
                 }`}
               >
-                {l}
+                <span>{l === "es" ? "🇪🇸" : "🇺🇸"}</span>
+                <span>{l.toUpperCase()}</span>
               </button>
             ))}
           </div>
@@ -179,16 +181,18 @@ export function SiteNav() {
               </motion.button>
             ))}
             <div className="mt-5 flex items-center justify-between gap-3">
-              <div className="flex gap-1 border border-silver/25 px-1 py-0.5">
+              {/* Selector de idiomas con banderas (Móvil) */}
+              <div className="flex gap-1 border border-silver/25 px-1.5 py-0.5">
                 {(["es", "en"] as const).map((l) => (
                   <button
                     key={l}
                     onClick={() => setLang(l)}
-                    className={`px-3 py-1 text-[0.65rem] uppercase tracking-[0.15em] ${
-                      lang === l ? "bg-gold text-navy-deep" : "text-silver/70"
+                    className={`flex items-center gap-1 px-2.5 py-1 text-[0.68rem] uppercase tracking-[0.15em] ${
+                      lang === l ? "bg-gold text-navy-deep font-medium" : "text-silver/70"
                     }`}
                   >
-                    {l}
+                    <span>{l === "es" ? "🇪🇸" : "🇺🇸"}</span>
+                    <span>{l.toUpperCase()}</span>
                   </button>
                 ))}
               </div>
