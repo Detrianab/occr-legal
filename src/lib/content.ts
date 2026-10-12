@@ -90,15 +90,86 @@ export const services: Service[] = [
     items: {
       es: [
         "Arbitraje comercial nacional e internacional",
+        "Arbitraje de inversión",
         "Mediación y conciliación",
         "Estrategia de litigio planificada",
         "Ejecución y reconocimiento de laudos",
       ],
       en: [
         "Domestic and international commercial arbitration",
+        "Investment arbitration",
         "Mediation and conciliation",
         "Planned litigation strategy",
         "Award enforcement and recognition",
+      ],
+    },
+  },
+  {
+    key: "fusiones",
+    title: { es: "Fusiones y Adquisiciones (M&A)", en: "Mergers & Acquisitions (M&A)" },
+    summary: {
+      es: "Diseño, negociación y ejecución de operaciones corporativas para crear valor y controlar riesgos.",
+      en: "Design, negotiation and execution of corporate transactions to create value and control risk.",
+    },
+    items: {
+      es: [
+        "Debida diligencia legal",
+        "Compraventa de acciones y activos",
+        "Reorganizaciones y alianzas estratégicas",
+        "Integración y gestión de riesgos posteriores al cierre",
+      ],
+      en: [
+        "Legal due diligence",
+        "Share and asset purchases",
+        "Reorganizations and strategic alliances",
+        "Post-closing integration and risk management",
+      ],
+    },
+  },
+  {
+    key: "cumplimiento",
+    title: {
+      es: "Cumplimiento Normativo y Buen Gobierno Corporativo",
+      en: "Regulatory Compliance & Corporate Governance",
+    },
+    summary: {
+      es: "Estructuras de control, transparencia y toma de decisiones que protegen la operación y sus administradores.",
+      en: "Control, transparency and decision-making structures that protect operations and their directors.",
+    },
+    items: {
+      es: [
+        "Auditorías y matrices de cumplimiento",
+        "Políticas internas y códigos de ética",
+        "Gobierno de juntas directivas y accionistas",
+        "Prevención y respuesta ante riesgos regulatorios",
+      ],
+      en: [
+        "Compliance audits and risk matrices",
+        "Internal policies and codes of ethics",
+        "Board and shareholder governance",
+        "Regulatory risk prevention and response",
+      ],
+    },
+  },
+  {
+    key: "propiedad",
+    title: { es: "Propiedad Intelectual", en: "Intellectual Property" },
+    summary: {
+      es: "Protección estratégica de marcas, activos creativos y conocimiento empresarial en entornos nacionales e internacionales.",
+      en: "Strategic protection of brands, creative assets and business knowledge in domestic and international settings.",
+    },
+    items: {
+      es: [
+        "Registro y defensa de marcas",
+        "Derecho de autor y activos digitales",
+        "Licencias, cesiones y franquicias",
+        "Protección de secretos empresariales",
+      ],
+      en: [
+        "Trademark registration and defense",
+        "Copyright and digital assets",
+        "Licensing, assignments and franchising",
+        "Trade secret protection",
       ],
     },
   },
